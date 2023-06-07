@@ -79,7 +79,7 @@ const CircleColWidget = (props) => {
 
 const CircleRowWidget = (props) => {
   return (
-    <div className="relative flex flex-row items-center drop-shadow-[0_4px_35px_rgba(0,0,0,0.15)] my-[10px]">
+    <div className="relative flex flex-row items-center drop-shadow-[0_4px_35px_rgba(0,0,0,0.15)] my-[30px]">
       <div className="absolute w-[130px] h-[130px] z-10 bg-white rounded-full flex justify-center items-center">
         <img className="w-[90px]" src={`img/${props.img}.png`} />
       </div>
@@ -108,7 +108,7 @@ export default function MobileMain() {
     <div className="App overflow-x-hidden whitespace-nowrap">
       <div id="page1" className="relative">
         <img
-          className="relative h-[100vh] object-cover object-right"
+          className="relative h-[100vh] min-h-[780px] object-cover object-right"
           src="img/bg_img.png"
         />
         <div className="absolute top-0 left-0 ml-[12%] mt-[104px] text-left text-white font-medium">
@@ -128,7 +128,7 @@ export default function MobileMain() {
 
       <div
         id="page2"
-        className="flex flex-col justify-center h-[100vh] p-[20px] bg-[#f1f1f1]"
+        className="flex flex-col justify-center h-[100vh] min-h-[780px] p-[20px] bg-[#f1f1f1]"
       >
         <div className="text-left font-light whitespace-nowrap">
           <h3 id="p2_title" className="text-[48px]">
@@ -147,49 +147,13 @@ export default function MobileMain() {
             <span className="font-medium">줄여드리기 위해</span> 태어났어요!
           </h5>
 
-          <div className="mt-[72px]">
-            <RecBubWidget
-              author="컴퓨터정보공학부 황XX"
-              desc={
-                <>
-                  항상 마트에서는{" "}
-                  <span className="font-medium">마감 상품을 할인</span>
-                  하는데 어떤{" "}
-                  <span className="font-medium">
-                    상품이 있는 지 확인하기 어려워요
-                  </span>
-                </>
-              }
-            />
-            <RecBubWidget
-              author="전자재료공학과 이XX"
-              desc={
-                <>
-                  냉동만두는 왜 대량으로만 파는 거죠...
-                  <span className="font-medium">조금씩만 나눠서</span>
-                  먹고싶어요ㅠ
-                </>
-              }
-            />
-            <RecBubWidget
-              author="월계동 ****마트 김XX"
-              desc={
-                <>
-                  가게 마감 전에
-                  <span className="font-medium">할인 상품을 다 못팔아서</span>
-                  아쉬웠습니다. 이것도 다
-                  <span className="font-medium">손해</span>
-                  거든요.
-                </>
-              }
-            />
-          </div>
+          <img src="img/p2_img_m.png" />
         </div>
       </div>
 
       <div
         id="page3"
-        className="flex flex-col justify-center items-start h-[100vh] pl-[20px]"
+        className="flex flex-col justify-center items-start h-[100vh] min-h-[780px] pl-[20px]"
       >
         <div className="text-left font-medium">
           <h3 id="p3_title" className="text-[48px]">
@@ -461,7 +425,7 @@ export default function MobileMain() {
       </div>
 
       <div id="page7" className="flex flex-col items-center mt-[128px]">
-        <h3 className="text-[28px] font-light text-center mb-[10px]">
+        <h3 className="text-[28px] font-light text-center mb-[70px]">
           <span className="font-medium">지구</span>와
           <span className="font-medium">지갑</span>을 지키는
           <span className="font-medium">광생</span>
